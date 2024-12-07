@@ -10,7 +10,7 @@ const AudioRecorder: React.FC = () => {
 
     const processAudioChunk = useRef(
         debounce(async (audioBlob: Blob) => {
-            const transcriptionEndpoint = 'http://localhost:5000/transcribe';
+            const transcriptionEndpoint = '/apz/transcribe';
             
             try {
                 // Lazy initialize AudioContext
